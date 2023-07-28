@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    
     "dev": "nodemon index.js"
   },
   "repository": {
@@ -14,7 +14,7 @@
   "author": "Meliodash",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.5",
+    "ejs": "^3.1.9",
     "express": "^4.17.1",
     "got": "^11.8.0",
     "nodemon": "^3.0.1"
