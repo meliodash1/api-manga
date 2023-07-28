@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
     "dev": "nodemon index.js"
   },
   "repository": {
@@ -17,6 +16,7 @@
     "ejs": "^3.1.9",
     "express": "^4.17.1",
     "got": "^11.8.0",
+    "http-proxy-middleware": "^2.0.6",
     "nodemon": "^3.0.1"
   }
 }
