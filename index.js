@@ -2,7 +2,6 @@ const express = require('express');
 const api = require("./api");
 const app = express();
 
-
 app.set("views", "./static/");
 app.use(express.static("./public/"))
 app.engine('html', require('ejs').renderFile);
