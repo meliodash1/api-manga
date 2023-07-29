@@ -122,9 +122,11 @@ app.get("/manga/:id", async(req, res) => {
     });
 });
 
+
+
 app.get('*', (req, res) => {
-    res.header("401");
-    const mensagem = "Erro 401"; 
+    
+    const mensagem = "Rota n encontrada"; 
     res.send(mensagem); 
 });
 

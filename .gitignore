@@ -110,8 +110,7 @@ dist
 # Docusaurus cache and generated files
 .docusaurus
 
-# Serverless directories
-.serverless/
+
 
 # FuseBox cache
 .fusebox/
@@ -140,5 +139,5 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
-
+.env
 # End of https://www.toptal.com/developers/gitignore/api/node
