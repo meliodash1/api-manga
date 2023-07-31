@@ -15,7 +15,7 @@ app.use(
     })
   );
 
-app.get("/api/search/", (req, res) => {
+app.get("/search/", (req, res) => {
     const name = req.query.q;
     api.search(name).then((response) => {
         res.send(response);
