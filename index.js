@@ -1,8 +1,21 @@
 const express = require('express');
 const api = require("./api");
 const app = express();
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
-app.get("/search/", (req, res) => {
+
+app.use(
+    '/api', // Caminho de origem para o proxy (defina conforme suas necessidades)
+    createProxyMiddleware({
+      target: 'https://mangalivre.net/', // URL do servidor da API de mangás
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api': '', // Remove o prefixo '/api' da URL antes de fazer a solicitação
+      },
+    })
+  );
+
+app.get("/api/search/", (req, res) => {
     const name = req.query.q;
     api.search(name).then((response) => {
         res.send(response);
